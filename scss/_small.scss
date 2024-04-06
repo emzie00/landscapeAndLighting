@@ -1,0 +1,88 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+/* HEADER  */
+header {
+    display: grid;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+    ion-icon {
+        font-size: 2rem;
+        color: $primaryColor;
+    }
+    a {
+        font-weight: $normalWeight;
+        text-decoration: none;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        grid-column: 2;
+        color: $fontColor;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+
+/* MAIN  */
+main {
+ 	p {padding: .5rem 2vw; color: $fontColor; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .swiper, .swiper img {
+        width: 600px;
+        height: 300px;
+      }
+} // end main
+main div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+        padding: 7px;
+        img {
+            width: 100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {
+                transform: rotate(-15deg);
+            }
+        }
+    }
+}
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: $primaryColor; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #D7D7D9;
+	text-align: center;
+	a{color: #D7D7D9;}
+}

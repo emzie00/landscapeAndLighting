@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Navigation Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <ion-icon name="sunny-outline"></ion-icon>
+		<h1>Landscape & Lighting</h1>
+        <a href="tel:8842623948">884.262.3948</a>
+	</header>
+</div><!-- end header wrapper -->
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+        <li><a href="#">Portfolio</a>
+        <li><a href="#">Services</a>
+        </li>
+        <li class="parent"><a href="#">Resources</a>
+            <ul>
+                <li><a href="#">Planting Guides</a></li>
+                <li class="active"><a href="#">Customers Say</a></li>
+                <li><a href="#">Seasonal Maintenance Tips</a></li>   
+            </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <picture>
+        <source srcset="images/small1.webp" media="(max-width: 400px)">
+        <source srcset="images/medium1.webp" media="(max-width: 800px)">
+        <img src="images/large1.webp" alt="Slider 1" width="1600" height="558">
+    </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/small2.webp" media="(max-width: 400px)">
+            <source srcset="images/medium2.webp" media="(max-width: 800px)">
+            <img src="images/large2.webp" alt="Slider 2" width="1600" height="549">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+            <source srcset="images/small3.webp" media="(max-width: 400px)">
+            <source srcset="images/medium3.webp" media="(max-width: 800px)">
+            <img src="images/large3.webp" alt="Slider 3" width="1600" height="778">
+        </picture>
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <h1>Customers Say</h1>
+  <div class="parent">
+    <section>
+        <img src="images/customer1.webp" alt="Customer Picture" width="200" height="200">
+        <p>Our yard has truly become an oasis thanks to the meticulous work of Landscaping & Lighting. They brought our vision to life with expertise and dedication.</p>
+    </section>
+    <section>
+        <img src="images/customer2.webp" alt="Customer Picture" width="200" height="200">
+        <p>Choosing Landscaping & Lighting was the best decision we made for our home. Their attention to detail and creativity transformed our outdoor space into something extraordinary.</p>
+    </section>
+  </div>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2024 Emma Church &bull; All rights reserved. </p>
+    </footer>
+</div> <!-- end footer wrapper -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/scripts.js"></script>
+</body>
+</html> 
