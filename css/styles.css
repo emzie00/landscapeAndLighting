@@ -190,6 +190,28 @@ main div.parent section img:hover {
   transform: rotate(-15deg);
 }
 
+div.cards {
+  display: grid;
+}
+div.cards section {
+  position: relative;
+  margin: 1rem;
+}
+div.cards section h2 {
+  background-color: #747C8C;
+  color: #D7D7D9;
+  padding: 1rem;
+}
+div.cards section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+div.cards section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
 /* FOOTER  */
 #footerWrapper {
   background-color: #73574D;
@@ -338,6 +360,10 @@ footer a {
     grid-template-columns: 140px auto;
     column-gap: 4px;
   }
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {
@@ -351,5 +377,9 @@ footer a {
   main div.parent section {
     grid-template-columns: 200px auto;
     column-gap: 8px;
+  }
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -74,7 +74,27 @@ main div.parent {
         }
     }
 }
-
+div.cards {
+    display: grid;
+    section {
+        position: relative;
+        margin: 1rem;
+        h2 {
+            background-color: #747C8C;
+            color: #D7D7D9;
+            padding: 1rem;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
 
 
 /* FOOTER  */

@@ -12,3 +12,7 @@ main div.parent {
         column-gap: 8px;
     }
 }
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
